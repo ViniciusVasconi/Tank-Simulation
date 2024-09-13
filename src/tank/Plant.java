@@ -6,13 +6,13 @@ public class Plant extends Organism{
 	
 	int growRate;
 	
-	public Plant(int gR) {
+	public Plant() {
 		Scanner scan = new Scanner(System.in);
 		position.setX(scan.nextInt());
 		position.setY(0);
 		this.energy = 100;
+		this.growRate = scan.nextInt();
 		scan.close();
-		this.growRate = gR;
 	}
 	
 	public void grow() {
